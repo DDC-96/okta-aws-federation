@@ -74,11 +74,11 @@ resource "okta_group_memberships" "manual_imported_users" {
 # resource "okta_user" "harry" {
 #   department      = "Cloud"
 #   display_name    = "Harry Ford"
-#   email           = "dcruzops@gmail.com"
+#   email           = ""
 #   employee_number = "12344567"
 #   first_name      = "Harry"
 #   last_name       = "Ford"
-#   login           = "dcruzops@gmail.com"
+#   login           = ""
 #   second_email    = "mail@mail.com"
 # }
 

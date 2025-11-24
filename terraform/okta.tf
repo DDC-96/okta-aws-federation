@@ -49,8 +49,8 @@ resource "okta_group" "sso_group" {
   description = "AWS SSO Push Group"
 }
 
-# # Below block should be implemented after adding secret and access keys into aws application under provisioning
-# # Assign the Okta Group to the SAML Application / Manually map the Role and SAML User Roles in Okta 
+# Below block should be implemented after adding secret and access keys into aws application under provisioning
+# Assign the Okta Group to the SAML Application / Manually map the Role and SAML User Roles in Okta 
 resource "okta_app_group_assignment" "sso_group" {
   app_id   = okta_app_saml.sso.id
   group_id = okta_group.sso_group.id
@@ -70,7 +70,7 @@ resource "okta_group_memberships" "manual_imported_users" {
 }
 
 
-# # Create an Okta User
+# Create an Okta User
 # resource "okta_user" "harry" {
 #   department      = "Cloud"
 #   display_name    = "Harry Ford"

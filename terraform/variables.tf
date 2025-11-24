@@ -1,14 +1,13 @@
 variable "aws_account_id" {
   type        = string
   description = "account id for aws"
-  default     = "***REMOVED***"
+  default     = ""
   sensitive = true
 }
 
 variable "org_name" {
   type        = string
   description = "organization name"
-  default     = "***REMOVED***"
 }
 
 variable "base_url" {
@@ -19,7 +18,6 @@ variable "base_url" {
 
 variable "api_token" {
   description = "API token for Okta"
-  default     = "***REMOVED***"
   sensitive = true
 }
 

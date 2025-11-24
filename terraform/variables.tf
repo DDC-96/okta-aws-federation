@@ -1,7 +1,6 @@
 variable "aws_account_id" {
   type        = string
   description = "account id for aws"
-  default     = ""
   sensitive = true
 }
 
